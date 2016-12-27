@@ -5,8 +5,8 @@ var express = require('express');
 var app = express();
 var people = require('./people');
 var account = {
-    email: 'c1495616@gmail.com',
-    password: 'jerry210492'
+    email: 'FB_ACCOUNT',
+    password: 'FB_PW'
 };
 
 
