@@ -29,6 +29,7 @@ app.get('/', function(req, res) {
         }, interval);
     
     });
+    res.write('hello world');
 });
 
 app.listen(port, function() {
