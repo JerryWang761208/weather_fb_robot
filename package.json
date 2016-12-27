@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "git":"git add . && git commit -am 'mod'"
+    "git":"git add . && git commit -am 'mod' && git push heroku master"
   },
   "author": "",
   "license": "ISC"
