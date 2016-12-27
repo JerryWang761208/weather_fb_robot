@@ -2,13 +2,19 @@ var login = require('facebook-chat-api');
 var getWeather = require('./getWeather');
 
 var account = {
-    email: 'FB_AC',
-    password: 'FB_PW'
+    email: 'c1495616@gmail.com',
+    password: 'jerry210492'
 };
 
 login(account, function(err, api){
-    var id = 733447275;
-    var interval = 3  * 1000; // 3 hour
+    /*
+    {
+        my:733447275,
+        flower:100000146521584
+    }
+    */ 
+    var id = 100000146521584;
+    var interval = 3   * 1000; // 3 hour
 
     setInterval(function(){
         getWeather(function(err, weather){
