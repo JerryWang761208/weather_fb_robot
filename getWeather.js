@@ -2,7 +2,7 @@ var request = require('request');
 var cheerio = require('cheerio');
 
 function getWeather(callback){
-    var url = 'http://www.cwb.gov.tw/V7/forecast/taiwan/Taichung_City.htm';
+    var url = 'http://www.cwb.gov.tw/V7/forecast/taiwan/Tainan_City.htm';
     request(url, function(err, res, body){
         var $ = cheerio.load(body);
 
