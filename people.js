@@ -11,6 +11,10 @@ var people = [
         id:"733447275",
         name:"me"
     },
+    {
+        id:"100000210704999",
+        name:"tangping"
+    }
 ];
 
 module.exports = people;
