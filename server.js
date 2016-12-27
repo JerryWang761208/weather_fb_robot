@@ -1,5 +1,7 @@
 var login = require('facebook-chat-api');
 var getWeather = require('./getWeather');
+var port = process.env.PORT || 8080;
+var express = require('express');
 
 var account = {
     email: 'c1495616@gmail.com',
