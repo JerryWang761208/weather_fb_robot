@@ -17,7 +17,7 @@ var account = {
 app.get('/', function(req, res) {
     login(account, function(err, api){
 
-        var interval = 3 * 1000; // 12 hour
+        var interval = 60 * 1000; // 12 hour
         setInterval(function(){
             getWeather(function(err, weather){
                 people.map(function(e){
