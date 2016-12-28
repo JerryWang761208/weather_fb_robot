@@ -4,9 +4,11 @@ var port = process.env.PORT || 8080;
 var express = require('express');
 var app = express();
 var people = require('./people');
+var config = require('./config');
+
 var account = {
-    email: 'FB_ACCOUNT',
-    password: 'FB_PW'
+    email: config.FB_ACCOUNT,
+    password: config.FB_PW
 };
 
 
@@ -14,17 +16,8 @@ var account = {
 
 app.get('/', function(req, res) {
     login(account, function(err, api){
-    /*
-    {
-        my:733447275,
-        flower:100000146521584
-    }
-    */ 
-        // var id = 733447275;
-        var interval = 12 * 3600 * 1000; // 12 hour
 
-
-
+        var interval = 3 * 1000; // 12 hour
         setInterval(function(){
             getWeather(function(err, weather){
                 people.map(function(e){
