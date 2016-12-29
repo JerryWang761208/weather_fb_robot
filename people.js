@@ -1,19 +1,19 @@
 var people = [
     {
         id:"100000213023243",
-        name:"wan_ting"
+        name:"琬婷"
     },
     {
         id:"508923564",
-        name:"badow"
+        name:"肚子"
     },
     {
         id:"733447275",
-        name:"me"
+        name:"彥勝"
     },
     {
         id:"100000210704999",
-        name:"tangping"
+        name:"躺平"
     }
 ];
 //flower:100000146521584
